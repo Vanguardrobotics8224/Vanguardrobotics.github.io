@@ -10,7 +10,7 @@ h3 {
 body {
       background-color: #000000;
       color: white;
-      font-family: Impact, sans-serif;
+      font-family: Verdana, sans-serif;
       text-align: center;
       padding: 20px;
       margin: 0;
@@ -73,22 +73,22 @@ body {
 }
 
     .navbar1 {
+      font-size: 1.2em;
       display: flex;
       justify-content: space-around;
       background-color: #000000;
       position: sticky;
       top: 0;
       z-index: 1000;
+      padding: 8px 10px;
+      border-radius: 8px;
     }
     .navbar1 a {
       color: white;
       font-size: 1.2em;
       text-decoration: none;
-		padding: 8px 10px;
+      padding: 8px 10px;
       border-radius: 8px;
-    }
-    .navbar a:hover {
-      background-color: #FF0000;
     }
 
 
@@ -114,7 +114,7 @@ body {
     }
     .description, .about-text, .competition-text {
       font-size: 1.2em;
-      max-width: 800px;
+      max-width: 50%;
       margin: 0 auto;
       line-height: 1.6;
       text-align: center;
@@ -178,16 +178,16 @@ body {
     }
     .contact-section 
 
-		{ A:link { color: #FFFFFF; text-decoration: none } 
+    { A:link { color: #FFFFFF; text-decoration: none } 
 A:visited { color: #FF0000; text-decoration: none }
 A:hover { text-decoration: underline }
 A:active { color: #FF0000; text-decoration: underline }}
 
-	  // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 900
+    // <uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 400 to 900
 
 
-	  
+    
 @media screen and (max-width: 400px) {
    #one { 
     float: none;
@@ -195,12 +195,11 @@ A:active { color: #FF0000; text-decoration: underline }}
     width:auto;
     border:0;
     border-bottom:2px solid #000; }
-   .sidenav {top: 150px;
-   right: 0px;}
-   h3:before {height: 125px;}
-   .content { padding-top: 125}
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}	
+    right: 0px;
+}
+
+h3:before {height: 125px;}
+  .content { padding-top: 125}
 }
 }
 * {
@@ -247,17 +246,12 @@ h1 {
   padding: 10px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  .navbar1 {
+      font-size: 0.5em;
   }
 }
 
